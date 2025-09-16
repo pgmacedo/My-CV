@@ -1,8 +1,8 @@
 {
-  "name": "my-cv",
+  "name": "CV",
   "version": "1.0.0",
-  "description": "Personal CV website",
-  "main": "src/index.js",
+  "description": "",
+  "main": "index.html",
   "scripts": {
     "start": "echo 'No build step defined'"
   },
