@@ -1,0 +1,11 @@
+{
+  "name": "my-cv",
+  "version": "1.0.0",
+  "description": "Personal CV website",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "echo 'No build step defined'"
+  },
+  "author": "pgmacedo",
+  "license": "MIT"
+}

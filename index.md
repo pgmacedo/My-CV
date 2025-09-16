@@ -1,1 +1,1 @@
-xxx
+<!-- Moved to src/index.md -->
