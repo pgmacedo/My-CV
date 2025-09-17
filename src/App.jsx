@@ -9,7 +9,7 @@ function App() {
     <div style={{ fontFamily: 'Arial, sans-serif', textAlign: 'center', margin: '40px' }}>
       <nav style={{ marginBottom: '2rem' }}>
         <button onClick={() => setPage('home')} style={{ marginRight: '1rem' }}>Home</button>
-        <button onClick={() => setPage('about')}>About</button>
+        <button onClick={() => setPage('about')}>Aboutxxxxxx</button>
       </nav>
       {page === 'home' ? (
         <>
