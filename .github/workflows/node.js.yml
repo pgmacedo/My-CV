@@ -1,32 +1,37 @@
-name: Deploy to GitHub Pages
+name: Deploy Vite React App
 
 on:
   push:
     branches:
-      - main
+      - main   # Change this if you use a different branch
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      # Pull repo
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      # Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: '22.x'
+          node-version: 21
+          cache: npm
 
+      # Install deps
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
+      # Build Vite app
       - name: Build
         run: npm run build
 
+      # Deploy to GitHub Pages
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          # Uncomment and set if you use a custom domain
-          cname: pgmacedo.work
