@@ -4,10 +4,10 @@ export default function About() {
   return (
     <Container sx={{ textAlign: "center", mt: 5 }}>
       <Typography variant="h3" gutterBottom>
-        About Me
+        Paulo Macedo
       </Typography>
       <Typography variant="body1" color="text.secondary">
-        This is the about page for my CV website.
+        31, living in Lisbon, likes to swim.
       </Typography>
       <Button variant="contained" sx={{ mt: 3 }}>
         Contact Me
