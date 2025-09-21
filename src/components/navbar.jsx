@@ -20,7 +20,8 @@ import { Link as RouterLink, MemoryRouter, StaticRouter } from 'react-router';
 const pages = [
     { name: 'CV', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Settings', path: '/settings' }
+    { name: 'Settings', path: '/settings' },
+    { name: 'Sudoku', path: '/sudoku' }
 ]
 const settings = [
     { name: 'About', path: '/about' },

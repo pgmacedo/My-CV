@@ -3,6 +3,7 @@ import NavBar from './components/navbar';
 import Home from './pages/home';
 import About from './pages/about';
 import Settings from './pages/settings';
+import Sudoku from './pages/sudoku';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/sudoku" element={<Sudoku />} />
       </Routes>
     </div>
     

@@ -9,7 +9,7 @@ export default function About() {
       <Typography variant="body1" color="text.secondary">
         31, living in Lisbon, likes to swim.
       </Typography>
-      <Button variant="contained" sx={{ mt: 3 }}>
+      <Button onClick={() => window.location = 'mailto:paulogranjamacedo@gmail.com'} sx={{ mt: 3 }} variant="contained">
         Contact Me
       </Button>
     </Container>

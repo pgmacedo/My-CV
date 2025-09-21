@@ -1,8 +1,14 @@
+import { Container, Typography } from "@mui/material";
+
 export default function Settings() {
   return (
-    <>
-      <h1>Settings</h1>
-      <p>This is the settings page for my CV website.</p>
-    </>
+    <Container sx={{ textAlign: "center", mt: 5 }}>
+      <Typography variant="h3" gutterBottom>
+        Settings
+      </Typography>
+      <Typography variant="body1" color="text.secondary">
+        This are the settings page for my website.
+      </Typography>
+    </Container>
   );
 }
