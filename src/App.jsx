@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-
 import NavBar from './components/navbar';
 import Home from './pages/home';
 import About from './pages/about';
@@ -15,6 +14,7 @@ function App() {
         <Route path="/settings" element={<Settings />} />
       </Routes>
     </div>
+    
   );
 }
 
